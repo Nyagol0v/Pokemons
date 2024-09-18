@@ -44,5 +44,11 @@ public class App {
         for (Player player : players) {
             System.out.println(player.getName() + " has " + player.getPokemons().size() + " Pokémon(s).");
         }
+        
+                System.out.println("\nAll Pokémon:");
+        for (Player player : players) {
+            System.out.println("\nPlayer " + player.getName() + ":");
+            player.showPokemons();
+        }
     }
 }
